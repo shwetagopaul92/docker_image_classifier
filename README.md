@@ -26,8 +26,8 @@ The python script used can be found at: https://raw.githubusercontent.com/tensor
   
   For example, with the golden retriever dog image present in this repository, you could:
   
-  > docker run -v $PWD:/data reshg/image_classifier:latest python ./classify_image.py --model_dir /model --image_file   
-  /data/dog.jpg
+  > docker run -v $PWD:/data reshg/image_classifier:latest python ./classify_image.py --model_dir /model 
+  --image_file /data/dog.jpg
   
   Results: 
   Successfully downloaded inception-2015-12-05.tgz 88931400 bytes.
