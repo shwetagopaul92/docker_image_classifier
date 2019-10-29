@@ -1,10 +1,11 @@
 # docker_image_classifier
+
 Simple Image Classifier with Tensor Flow using Docker
 
 This is an illustration of an Image Classifier based on Tensor Flow. 
 The python script used can be found at: https://raw.githubusercontent.com/tensorflow/models/master/tutorials/image/imagenet/classify_image.py
 
-Docker Hub Image can be got from:
+- Docker Hub Image can be got from:
   > docker pull reshg/image_classifier
 
 - To get started:
