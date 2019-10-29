@@ -13,20 +13,20 @@ The python script used can be found at: https://raw.githubusercontent.com/tensor
   > docker run reshg/image_classifier:latest
     would throw a help message on how to use this image
   
-    Output: To use this image: docker run -v /hostdirectory_withimage:/data reshg/image_classifier:latest python          
-    ./classify_image.py --model_dir /model --image_file /data/imagename.jpg
+    Output: To use this image: docker run -v /hostdirectory_withimage:/data reshg/image_classifier:latest         
+    classify_image.py --model_dir /model --image_file /data/imagename.jpg
   
       
 - To use your own image, follow these steps:
   
-  > docker run -v $PWD:/data reshg/image_classifier:latest python ./classify_image.py --model_dir /model --image_file 
+  > docker run -v $PWD:/data reshg/image_classifier:latest classify_image.py --model_dir /model --image_file 
   /data/demo_images/imagename
   
   Here we mount a host directory($PWD) with our required image file to the docker container and specify the command to call   the python script and required arguments. 
   
   For example, with the golden retriever dog image present in this repository, you could:
   
-  > docker run -v $PWD:/data reshg/image_classifier:latest python ./classify_image.py 
+  > docker run -v $PWD:/data reshg/image_classifier:latest classify_image.py 
   --model_dir /model --image_file /data/dog.jpg
   
   Results: 
